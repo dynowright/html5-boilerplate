@@ -1,13 +1,11 @@
 // pyramid builder
 
-function count(start, end) {
-for (; start < end; start++) {
-     document.write(start);
-   }
- }
- 
- var oldNumber = 1;
- var newNumber = 6;
- count(oldNumber, newNumber);
- count(start, end);
+pyramid = ["*", "**", "***", "****", "*****"];
+text = "";
+var i;
+for (i = 0; i < pyramid.length; i++) {
+    text += pyramid[i] + "<br>";
+}
+
+document.getElementById("star").innerHTML = text;
  
