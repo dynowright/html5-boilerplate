@@ -11,19 +11,11 @@ document.getElementById("star").innerHTML = text;
  
 //even odd
 
-var hs = ["ODD", "EVEN", "ODD", "EVEN"];
-text = "";
-
-var i;
-for (i = 0; i < hs.length; i++) {
-    text += hs[i] + "<br>";
-  
-  if (hs[i] % 2 === 0){
-  // I got stuck here!     
-    
-
-    
-  }
-}
-
-document.getElementById("even_or_odd").innerHTML = text;
+for (var i = 1; i <= 4; i++) {
+    if (i % 2 === 0) {
+        document.write("<h" + i + ">" + "Even" + "</h" + i + ">");
+    }
+      else {   
+        document.write("<h" + i + ">" + "Odd" + "</h" + i + ">");
+      }
+    }
